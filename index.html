@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Leaf</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <style type="text/css">
 	       body{
             background-color: #022001;
@@ -118,12 +117,7 @@
 <script type="text/javascript">
   
 	window.addEventListener("scroll",function(event){
-		   var l= document.getElementById('k').scrollTop
-        console.log('scrollTop',l)
-    
-        console.log('offset', window.pageYOffset)
-        var l5= document.getElementById('l5')
-        l5.style.transform="translate(-"+window.pageYOffset+"px,"+window.pageYOffset+"px) scale(1.5)"
+ document.getElementById('l5').style.transform="translate(-"+window.pageYOffset+"px,"+window.pageYOffset+"px) scale(1.5)"
         document.getElementById('l8').style.transform="scaleY(-1) rotate(-45deg) translate(0px,"+window.pageYOffset+"px)"
         document.getElementById('l2').style.transform="scale(-1.2) rotate(50deg) translate("+window.pageYOffset+"px,"+window.pageYOffset+"px)"
 	   document.getElementById('l6').style.transform="scaleX(-1) translate(-"+window.pageYOffset+"px,"+window.pageYOffset+"px)"
